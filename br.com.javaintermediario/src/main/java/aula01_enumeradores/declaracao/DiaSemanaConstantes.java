@@ -1,4 +1,4 @@
-package aula01_enumeradores;
+package aula01_enumeradores.declaracao;
 
 public class DiaSemanaConstantes {
 
