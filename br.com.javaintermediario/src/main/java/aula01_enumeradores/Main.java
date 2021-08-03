@@ -9,15 +9,24 @@ public class Main {
 
     private static void usandoConstantes(){
 
-        int segunda = DiaSemanaConstantes.SEGUNDA;
-        int terca = DiaSemanaConstantes.TERCA;
-        int quarta = DiaSemanaConstantes.QUARTA;
-        int quinta = DiaSemanaConstantes.QUINTA;
-        int sexta = DiaSemanaConstantes.SEXTA;
-        int sabado = DiaSemanaConstantes.SABADO;
-        int domingo = DiaSemanaConstantes.DOMINGO;
+        DiaSemanaEnum segunda = DiaSemanaEnum.SEGUNDA;
+        DiaSemanaEnum terca = DiaSemanaEnum.TERCA;
+        DiaSemanaEnum quarta = DiaSemanaEnum.QUARTA;
+        DiaSemanaEnum quinta = DiaSemanaEnum.QUINTA;
+        DiaSemanaEnum sexta = DiaSemanaEnum.SEXTA;
+        DiaSemanaEnum sabado = DiaSemanaEnum.SABADO;
+        DiaSemanaEnum domingo = DiaSemanaEnum.DOMINGO;
 
         System.out.println("Teste utilizando constantes no Java");
+//        imprimeDiaSemana(segunda);
+//        imprimeDiaSemana(terca);
+//        imprimeDiaSemana(quarta);
+//        imprimeDiaSemana(quinta);
+//        imprimeDiaSemana(sexta);
+//        imprimeDiaSemana(sabado);
+//        imprimeDiaSemana(domingo);
+
+        System.out.println("Teste utilizando enum no Java");
         imprimeDiaSemana(segunda);
         imprimeDiaSemana(terca);
         imprimeDiaSemana(quarta);
@@ -27,22 +36,40 @@ public class Main {
         imprimeDiaSemana(domingo);
     }
 
-    private static void imprimeDiaSemana(int dia){
+    private static void imprimeDiaSemana(DiaSemanaEnum dia){
         switch (dia){
-            case 1:
+            case SEGUNDA:
                 System.out.println("Segunda-Feira");
-            case 2:
+                break;
+            case TERCA:
                 System.out.println("Terça-Feira");
-            case 3:
+                break;
+            case QUARTA:
                 System.out.println("Quarta-Feira");
-            case 4:
+                break;
+            case QUINTA:
                 System.out.println("Quinta-Feira");
-            case 5:
+                break;
+            case SEXTA:
                 System.out.println("Sexta-Feira");
-            case 6:
+                break;
+            case SABADO:
                 System.out.println("Sabado");
-            case 7:
+                break;
+            case DOMINGO:
                 System.out.println("Domingo");
+                break;
         }
+    }
+
+    private void usandoEnum(){
+
+        DiaSemanaEnum segunda = DiaSemanaEnum.SEGUNDA;
+        DiaSemanaEnum terca = DiaSemanaEnum.TERCA;
+        DiaSemanaEnum quarta = DiaSemanaEnum.QUARTA;
+        DiaSemanaEnum quinta = DiaSemanaEnum.QUINTA;
+        DiaSemanaEnum sexta = DiaSemanaEnum.SEXTA;
+        DiaSemanaEnum sabado = DiaSemanaEnum.SABADO;
+        DiaSemanaEnum domingo = DiaSemanaEnum.DOMINGO;
     }
 }
