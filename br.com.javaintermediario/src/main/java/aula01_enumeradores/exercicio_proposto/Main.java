@@ -12,5 +12,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println("Realizando as operações com os valores 5 e 10.");
+
+        System.out.println(OperacaoMatematica.SOMAR.executarOperacao(5, 10));
+        System.out.println(OperacaoMatematica.SUBTRAIR.executarOperacao(5, 10));
+        System.out.println(OperacaoMatematica.MULTIPLICAR.executarOperacao(5, 10));
+        System.out.println(OperacaoMatematica.DIVIDIR.executarOperacao(5, 10));
     }
 }

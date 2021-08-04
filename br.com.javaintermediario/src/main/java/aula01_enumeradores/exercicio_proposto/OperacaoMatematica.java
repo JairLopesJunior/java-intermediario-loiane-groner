@@ -32,6 +32,10 @@ public enum OperacaoMatematica {
         return simboloOperacao;
     }
 
+    public void setSimboloOperacao(String simboloOperacao) {
+        this.simboloOperacao = simboloOperacao;
+    }
+
     @Override
     public String toString() {
         return "OperacaoMatematica{" +

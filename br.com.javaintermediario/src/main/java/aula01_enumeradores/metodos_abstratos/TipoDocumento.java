@@ -13,4 +13,5 @@ public enum TipoDocumento {
     };
 
     public abstract String geraNumeroTeste();
+    
 }
